@@ -4,6 +4,7 @@ import './product.css';
 
 const Product = ()=>{
     const urlParams = useParams();
+    const [product , setProduct] = useState({})
 
     useEffect(()=>{
         getOneProduct();
@@ -14,7 +15,7 @@ const Product = ()=>{
             .then(res=>res.json())
             .then(json=>setProduct(json))
     }
-    const [product , setProduct] = useState({})
+    
 return <div className=" w-50 m-auto mt-5">
     <div className="product_card border shadow p-5 justify-content-between row">
         <div className="product_img col-md-5">

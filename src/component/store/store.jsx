@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import './store.css';
 
 const Store = () => {
+    const [product , setProduct] = useState([ ]); 
+    
     useEffect(()=>{
         getAllProducts();
     },[])
@@ -13,19 +15,17 @@ const Store = () => {
             .then(json=>setProduct(json))
     }
 
-    const [product , setProduct] = useState([ ]); 
     console.log("product ",product)
     
     
-    
+     
 
-    
     return <div className="product_container mt-5 text-center d-flex justify-content-center flex-wrap">
-      
         {
+        
             product.map((item,index) =>{
-                return <div className="border col-md-4 w-25 m-3 ">
-                    <Link to={`/product/${item.id}`} key={index}>
+                return <div  key={index} className="border col-md-4 w-25 m-3 ">
+                    <Link to={`/product/${item.id}`}>
                     <div className="product_card text-center p-4">
                        <div className="bg-info w-50 h-50">
                        <img className="w-100 h-100" src={item.image} alt="" />
@@ -36,9 +36,11 @@ const Store = () => {
                     </div>
                 </Link>
                 </div>
-                
             })
         }
     </div>
+       
+      
+    
 }
 export default Store;
