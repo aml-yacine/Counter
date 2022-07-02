@@ -1,0 +1,15 @@
+.navbar_contain{
+    background-color: rgb(253, 254, 255);
+}
+.nav_links{
+    width: 40%;
+}
+.nav_links li{
+    list-style-type: none;
+}
+.nav_links li a{
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+color: #000;
+}
