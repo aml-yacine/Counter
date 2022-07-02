@@ -1,6 +1,6 @@
 import Counter from "./component/counter/counter";
 import Home from "./component/home/home";
-import About from "./component/about/about";
+import Register from "./component/register/register";
 import Store from "./component/store/store";
 import Navbar from "./component/navbar/navbar";
 import Product from "./component/product/product";
@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element= {<Home />}/>
-        <Route path="/about" element= {<About />}/>
+        <Route path="/register" element= {<Register />}/>
         <Route path="/store" element= {<Store />}/>
         <Route path="/counter" element= {<Counter />}/>
         <Route path="/todo" element= {< Todo/>}/>
