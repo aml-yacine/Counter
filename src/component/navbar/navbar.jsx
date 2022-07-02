@@ -7,7 +7,7 @@ const Navbar = ()=>{
   <h3><span className='text-primary'>LO</span>GO</h3>
 <ul className="d-flex mt-2 nav_links justify-content-between">
     <li ><Link className='text-primary' to="/">HOME</Link></li>
-    <li><Link className='text-primary' to="/about">ABOUT</Link></li>
+    <li><Link className='text-primary' to="/register">MY FORM</Link></li>
     <li><Link className='text-primary' to="/store">STORE</Link></li>
     <li><Link className='text-primary' to="/counter">COUNTER</Link></li>
     <li><Link className='text-primary' to="/todo">TODO</Link></li>
